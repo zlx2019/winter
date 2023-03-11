@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.winter</groupId>
+        <artifactId>winter-commons</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>winter-mp-deployment</artifactId>
+    <description>
+        winter - 数据访问通用组件 - MybatisPlus
+    </description>
+    <dependencies>
+        <!--winter Core组件-->
+        <dependency>
+            <groupId>com.winter</groupId>
+            <artifactId>winter-core-deployment</artifactId>
+        </dependency>
+        <!--MybatisPlus-->
+        <dependency>
+            <groupId>io.quarkiverse.mybatis</groupId>
+            <artifactId>quarkus-mybatis-plus</artifactId>
+        </dependency>
+        <!--Mysql 驱动-->
+        <dependency>
+            <groupId>io.quarkus</groupId>
+            <artifactId>quarkus-jdbc-mysql</artifactId>
+        </dependency>
+    </dependencies>
+</project>

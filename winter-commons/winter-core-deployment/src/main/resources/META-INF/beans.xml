@@ -1,0 +1,12 @@
+<beans xmlns="https://jakarta.ee/xml/ns/jakartaee"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd"
+       bean-discovery-mode="all" version="3.0">
+    <!--
+        bean-discovery-mode可选性有如下:
+
+        annotated: 默认模式。只会扫描注入带有CDI注解的类,如ApplicationScoped、RequestScoped、Singleton、Named等。
+        class: 只扫描在应用程序中显式引用的类。
+        all: 以查找所有 CDI bean。这包括应用程序的类、依赖项库和 Quarkus 所提供的扩展。
+    -->
+</beans>
